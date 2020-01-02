@@ -1,0 +1,109 @@
+
+
+.main-area {
+	margin: 0 auto;
+	width:70%;
+	
+}
+
+
+#navb ul{
+	list-style-type: none;				
+	margin: 0;
+	padding: 0;
+}
+
+#navb li {
+	float: right;						
+}
+
+#navb a{
+	display: block;
+	padding: 8px;
+
+}
+
+
+
+.centre-pic{
+	display: block;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+ 	
+}
+
+
+.my-form{
+	padding:10px;
+
+}
+
+.my-form .searchbox{
+	padding:10px;
+	width: 100%;
+}
+
+.searchbox input[type="text"]{
+	width:100%;
+
+}
+
+.buttons {
+	text-align: center;
+}
+
+.lang-text{
+	text-align: center;
+}
+
+.my-form a{
+	padding-right: 10px;
+}
+
+.footer2 ul{
+	list-style-type: none
+	margin:0;
+	padding:0;
+}
+
+.footer2 li {
+	float: left;						
+}
+
+.footer2 a{
+	display: block;
+	padding: 0 0 0 8px;
+}
+
+.footer2 p {
+	margin-top: 5px;
+	background-color: #D7DBDD;						
+}
+
+.footer1 p{
+	position: fixed;
+	left: 0px;
+	bottom: 40px;
+	width: 100%;
+	margin: 10px;
+
+	background-color: #D7DBDD;
+}
+
+
+
+.footer2{
+	position:absolute;
+   left:0px;
+   bottom:0px;
+   height:45px;
+   width:100%;
+   background-color: #D7DBDD;
+}
+
+.footer2 li:nth-child(4){
+  padding-right: 50%;
+}
+
