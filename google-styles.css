@@ -1,106 +1,157 @@
+body{
+	margin:0;
+}
+.container{
+/*	background-color: yellow;   */
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width:100%;
+	padding:10px;
+	height: 800px;
+	position: relative;
+}
 
-.main-area {
-	margin: 20px auto;
+nav{
+/*	background-color: #EAECEE;   */
+	padding: 5px;
+	position:fixed;				/*taken out of normal document flow */
+	top:0px;
+	left:0px;
+	width:100%;
+
+}
+
+nav ul:after{
+	content: ""				/* clearing float so that it does not mess up items after */
+	display:block;
+	clear: both;
+}
+
+nav li{
+	list-style-type: none;
+	margin:0 10px;
+	float:right;
+}
+
+nav a{
+	font-family: sans-serif;
+	font-size: 13px;
+
+}
+
+nav a:hover{
+	color: red;
+}
+
+footer{
+
+	background-color: #EBEDEF;
+	border-style: groove;
+	position: fixed;
+	bottom: 0;
+	left:0;
+	width: 100%
+}
+
+footer li{
+	list-style-type: none;
+	display: inline-block;
+	margin:0 10px;
+
+}
+
+footer a{
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+footer a:hover{
+	color:red;
+}
+
+
+footer .left{					/* floating anchor two sections of anchor tags - left and right */
+	float: left;
+}
+
+footer .right{
+	float: right;
+}
+
+.center-box{
+/*	background-color: blue; */
+	position: absolute;
+/*	border: solid 3px;    */
+	top:10%;
+	width: 70%;
+	height:80%;
+	padding:10px;
+	left: 15%;
+
+}
+.google-image{
+/*ackground-color: yellow;	*/
+
+}
+
+.google-image img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+	padding-top:100px;
+}
+
+.searchbox{
 	width:100%;
 }
 
-
-#navb ul{
-	list-style-type: none;				
-	margin: 0;
-	padding: 0;
-}
-
-#navb li {
-	float: right;						
-}
-
-#navb a{
+.searchbox input{
 	display: block;
-	padding: 8px;
-
-}
-
-
-
-.centre-pic{
-	display: block;
-	margin-top: 100px;
-	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
- 	
+	margin-top:10px;
+	margin-bottom: 10px;
+	border-radius:8px;
 }
 
+.buttons p{
+	text-align: center;
+}
 
-.my-form{
+#button1 {
 	padding:10px;
-
+	margin:6px;
+	font-size:14px;
 }
 
-
-
-.searchbox input[type="text"]{
-	display: block;
-	width: 70%;
-	margin:0px auto;
-	
-
+#button2 {
+	padding:10px;
+	margin:6px;
+	font-size:14px;
 }
 
-
-.buttons {
+.lang-text p{
 	text-align: center;
+
 }
 
-.lang-text{
-	text-align: center;
+.lang-text a{
+	font-size: 14px;
+	font-style: arial;
+	padding-right: 6px;
+
 }
 
-.my-form a{
-	padding-right: 10px;
+.lang-text a:hover{
+	color:red;
 }
 
-.footer2 ul{
-	list-style-type: none
+.lang-text li{
+	display:inline-block;
+
 }
-
-.footer2 li {
-	float: left;						
-}
-
-.footer2 a{
-	display: block;
-	padding: 0 0 0 8px;
-}
-
-.footer2 p {
-	margin-top: 5px;
-	background-color: #D7DBDD;						
-}
-
-.footer1 {
-	position:fixed;
-   left:0px;
-   bottom:35px;
-   height:40px;
-   width:100%;
-   background-color: #D7DBDD;
-   border-style: groove;
-}
-
-
-.footer2 {
-	position:fixed;
-   left:0px;
-   bottom:0px;
-   height:35px;
-   width:100%;
-   background-color: #D7DBDD;
-}
-
-.footer2 li:nth-child(4){
-  padding-right: 65%;
-}
-
-
