@@ -1,157 +1,195 @@
-body{
-	margin:0;
-}
-.container{
-/*	background-color: yellow;   */
-	margin-top: 50px;
-	margin-bottom: 50px;
-	width:100%;
-	padding:10px;
-	height: 800px;
-	position: relative;
+*{
+	font-family: arial,sans-serif;
+	margin: 0;
 }
 
-nav{
-/*	background-color: #EAECEE;   */
-	padding: 5px;
-	position:fixed;				/*taken out of normal document flow */
-	top:0px;
-	left:0px;
-	width:100%;
-
+html,body{
+	height:100%;
 }
 
-nav ul:after{
-	content: ""				/* clearing float so that it does not mess up items after */
-	display:block;
-	clear: both;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-nav li{
+.wrapper{
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	flex: 1 0 auto;
+}
+
+/* General Menu Styles */
+nav ul{
 	list-style-type: none;
-	margin:0 10px;
-	float:right;
+	padding: 0;
 }
 
-nav a{
-	font-family: sans-serif;
+nav a {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
 	font-size: 13px;
 
 }
 
 nav a:hover{
-	color: red;
+	color:#34495E;
+	text-decoration: underline;
 }
 
-footer{
-
-	background-color: #EBEDEF;
-	border-style: groove;
-	position: fixed;
-	bottom: 0;
-	left:0;
-	width: 100%
-}
-
-footer li{
+footer ul{
 	list-style-type: none;
-	display: inline-block;
-	margin:0 10px;
+	padding: 0;
 
 }
 
 footer a{
-	font-family: sans-serif;
-	font-size: 15px;
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 13px;
 }
 
 footer a:hover{
-	color:red;
+	color:#34495E;
+	text-decoration: underline;
 }
 
-
-footer .left{					/* floating anchor two sections of anchor tags - left and right */
-	float: left;
-}
-
-footer .right{
-	float: right;
-}
-
-.center-box{
-/*	background-color: blue; */
-	position: absolute;
-/*	border: solid 3px;    */
-	top:10%;
-	width: 70%;
-	height:80%;
-	padding:10px;
-	left: 15%;
-
-}
 .google-image{
-/*ackground-color: yellow;	*/
-
-}
-
-.google-image img{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 10px;
-	padding-top:100px;
+	height: 180px;
+	width: 275px;
+	padding: 50px 0 6px 0;
+	margin: 10px;
 }
 
-.searchbox{
-	width:100%;
-}
-
-.searchbox input{
+.search-box{
 	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top:10px;
-	margin-bottom: 10px;
-	border-radius:8px;
+	height: 50px;
+	width: 550px;
+	padding: 6px 0 6px 0;
+	/*background-color: blue; */
 }
 
-.buttons p{
+.search-box input[type=text]{
+	width: 100%;
+	padding: 15px 0 15px 0;
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+.buttons{
+	display: block;
+	/*background-color: brown;*/
+	height: 50px;
+	width: 450px;
+	padding: 15px;
+
+}
+
+.button1:hover{
+	border:1px solid #D6DBDF;
+	color:#34495E;
+}
+.button2:hover{
+	border:1px solid #D6DBDF;
+	color:#34495E;
+}
+
+.button1{
+	background-color:#F4F6F6;
+	border-radius: 4px;
+	margin-right: 6px;
+	max-height: 35px;
 	text-align: center;
+	border: none;
+	color: #5D6D7E;
+
 }
 
-#button1 {
-	padding:10px;
-	margin:6px;
-	font-size:14px;
-}
-
-#button2 {
-	padding:10px;
-	margin:6px;
-	font-size:14px;
-}
-
-.lang-text p{
+.button2{
+	background-color:#F4F6F6;
+	padding: 6px 0 6px 0;
+	border-radius: 4px;
+	max-height: 35px;
 	text-align: center;
-
+	border: none;
+	color: #5D6D7E;
 }
 
-.lang-text a{
-	font-size: 14px;
-	font-style: arial;
-	padding-right: 6px;
-
+.lang{
+	display: block;
+	/*background-color: cyan;*/
+	height: 30px;
+	width: 400px;
+	padding: 6px;
 }
 
-.lang-text a:hover{
-	color:red;
+.lang p{
+	text-align: center;
+	font-size: 13px;
 }
 
-.lang-text li{
-	display:inline-block;
+.lang a{
+	text-decoration: none;
+}
 
+.lang a:hover{
+	text-decoration: underline;
+}
+
+/* Flex Styles */
+@media screen and (min-width: 750px)
+{
+	nav{
+		display: flex;
+		justify-content: flex-end;
+		margin: 6px;
+	}
+
+	nav ul{
+		display: flex;
+
+	}
+
+	footer{
+		display: flex;
+		justify-content: space-between;
+		margin: 8px;
+		flex-shrink: 0;
+		border: 2px solid #CCD1D1;
+
+	}
+
+	.foot-left ul{
+		display: flex;
+
+	}
+
+	.foot-left li{
+		display: inline-block;
+
+	}
+
+	.foot-right li{
+		display: inline-block;
+
+	}
+
+	.foot-right ul{
+		display: flex;
+	}
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.buttons{
+		display: flex;
+		justify-content: center;
+	}
 }

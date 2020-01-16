@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Google Page Boxing</title>
+	<title>Google Flex</title>
 	<link rel="stylesheet" type="text/css" href="google-styles.css">
 </head>
 <body>
-	<div class="container">
-		<div class="center-box">
+	<nav>
+		<ul>
+			<li><a href="">Gmail</a></li>
+			<li><a href="">Pictures</a></li>
+			<li><a href="">Apps</a></li>
+			<li><a href="">Sign In</a></li>
+		</ul>
+	</nav>
+	<div class="wrapper">
+		<div class="container">
 			<div class="google-image">
-				<img src="googlelogo.png" alt="google-image" align="center-box">
+				<img src="googlelogo.png" alt="google logo" height="150" width="274">
 			</div>
-
-			<div class="my-form">
-				<form>
-					<div class="searchbox">
-						<input type="text" name="searchbox">
-					</div>
-
-					<div class="buttons">
-						<p>
-							<input  type="submit" value="Google Search" name="searchbut" id="button1">
-							<input  type="submit" value="I'm feeling lucky" name="luckybut" id="button2">
-						</p>
-								
-					</div>
-
-					<div class="lang-text">
-						 <p >
-							<label>Google offered in: <a href="">English  </a> <a href="">Spanish   </a> <a href="">French  </a> </label>
-						</p>
-					</div> 
+			
+			<div class="search-box">
+				<form class=form1>
+					<input type="text" id="searchbox" name="searchbox" placeholder="">
+					
 				</form>
 				
 			</div>
+
+			<div class="buttons">
+				<button class="button1">Search on Google</button>
+				<button class="button2">Today I'm so lucky</button>
+			</div>
+
+			<div class="lang">
+				<p>Google offered in: <a href="">English</a> <a href="">French</a> <a href="">Spanish</a> <a href="">Dutch</a></p>
+			</div>
+
 			
 		</div>
-		
-		
-		<nav>
-			<ul>
-				<li><a href="">Google</a></li>
-				<li><a href="">Images</a></li>
-				<li><a href="">Sign In</a></li>
-			</ul>
-		</nav>
-		<footer>
-			<ul>
-				<li class="left"><a href="">Advertising</a></li>
-				<li class="left"><a href="">Business</a></li>
-				<li class="left"><a href="">About</a></li>
-				<li class="left"><a href="">How Search works</a></li>
-				<li class="right"><a href="">Privacy</a></li>
-				<li class="right"><a href="">Terms</a></li>
-				<li class="right"><a href="">Settings</a></li>
-			</ul>
-		</footer>
 	</div>
+	<footer>
+				<ul class="foot-left">
+					<li><a href="">Advertising</a></li>
+					<li><a href="">Business</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">How Search Works</a></li>
+				</ul>
+				<ul class="foot-right">
+					<li><a href="">Privacy</a></li>
+					<li><a href="">Terms</a></li>
+				</ul>
+			</footer>
 </body>
 </html>
